@@ -1,10 +1,10 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Form
 from model import generate_blog_titles
 
 app = FastAPI()
 
 @app.post("/generate-titles/")
-async def generate_titles(content: str):
+def generate_titles(content: str = Form(...)):
     try:
         suggested_titles = generate_blog_titles(content)
         return {"suggested_titles": suggested_titles}
