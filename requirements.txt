@@ -1,5 +1,3 @@
-django
 langchain-groq
-requests
 fastapi
 uvicorn
