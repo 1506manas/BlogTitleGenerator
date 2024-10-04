@@ -30,6 +30,13 @@ To run the FastAPI server, you need to use Uvicorn. Use the following command:
 ```bash
 uvicorn main:app --reload
 ```
+## Using Postman for FastAPI
+To use Postman for sending requests by using FastAPI:
+
+- Open Postman.
+- Set the request type to POST.
+- Enter the URL for FastAPI server: http://127.0.0.1:8000/generate-titles/
+- In the "body", select "form-data" and "content" in the Key and "Enter your blog content" in the Value.
 
 ## Running the Django Server
 To run the Django server, use the following command:
@@ -37,16 +44,10 @@ To run the Django server, use the following command:
 ```bash
 python manage.py runserver
 ```
-## Using Postman
-To use Postman for sending requests by using both FastAPI and Django:
+## Using Postman for Django
+To use Postman for sending requests by using Django:
 
 - Open Postman.
 - Set the request type to POST.
-- Enter the URL for FastAPI server: http://127.0.0.1:8000/generate-titles/
 - Enter the URL for Django server: http://127.0.0.1:8000/api/generate-titles/
-- In the body, select "raw" and choose "JSON" from the dropdown. Enter your content:
-```bash
-{
-  "content": "Your blog content here."
-}
-```
+- In the "body", select "form-data" and "content" in the Key and "Enter your blog content" in the Value.
