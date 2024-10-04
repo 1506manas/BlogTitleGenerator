@@ -14,7 +14,18 @@ This project is a FastAPI application that provides an API for generating creati
 - Groq API
 - Python
 
+## Create Virtual Environment
+```bash
+python -m venv myenv
+```
+"myenv" is the name of the virtual environment.
+
+```bash
+myenv\Scripts\activate
+```
+
 ## Installation
+Install the packages after activating the Virtual Environment.
 ```bash
 pip install -r reuirements.txt
 ```
